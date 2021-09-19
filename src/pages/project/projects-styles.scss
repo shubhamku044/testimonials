@@ -1,0 +1,15 @@
+.projects {
+	padding-bottom: 3rem;
+	margin: 8rem auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: auto;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+
+	&-card {
+		margin: 1rem;
+	}
+}

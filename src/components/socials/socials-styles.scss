@@ -1,0 +1,39 @@
+@import 'variables';
+
+.social__handle {
+	&-sidebar {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		left: 4rem;
+		top: 0;
+		height: 100%;
+	}
+
+	&-icon {
+		&,
+		&:link,
+		&:visited {
+			text-decoration: none;
+			transition: all 0.4s;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 4rem;
+		}
+
+		&:hover {
+			transform: translateY(-0.5rem);
+		}
+
+		&:active {
+			transform: translateY(0);
+		}
+	}
+
+	&-img {
+		width: $icon-size-sidebar;
+		height: auto;
+	}
+}

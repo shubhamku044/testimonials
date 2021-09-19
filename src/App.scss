@@ -1,0 +1,49 @@
+@import 'variables';
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	// This defines what 1rem is
+	font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+	box-sizing: border-box;
+	background-color: $color-dark-background;
+}
+
+.wrapper {
+	position: relative;
+	width: 80vw;
+	@media screen and (max-width: 480px) {
+		& {
+			max-width: 430px;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		& {
+			max-width: 740px;
+		}
+	}
+	@media screen and (max-width: 1024px) {
+		& {
+			max-width: 980px;
+		}
+	}
+	@media screen and (min-width: 1280px) {
+		& {
+			max-width: 1024px;
+		}
+	}
+}
+
+.App {
+	position: relative;
+	min-height: 95vh;
+}
